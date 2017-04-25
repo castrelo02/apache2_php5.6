@@ -8,4 +8,3 @@ EXPOSE 80
 ENTRYPOINT [ "/usr/sbin/apache2ctl", "-D FOREGROUND", "-X" ]
 RUN ln -sf /dev/stdout /var/log/apache2/access.log \
 	&& ln -sf /dev/stderr /var/log/apache2/error.log
-
